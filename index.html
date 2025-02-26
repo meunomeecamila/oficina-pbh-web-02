@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontro 2</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="banda.css">
+    <link rel="stylesheet" href="fita.css">
+    <!--Os estilos que estão no index no head tem prioridade maior. Arquivos externos tem menor prioridade-->
+    <style>
+        p {
+            color: rgb(47, 172, 255);
+        }
+
+        #primeira-div {
+            color: rgb(9, 11, 14);
+            background-color: rgb(213, 233, 226);
+            text-decoration: underline;
+        }
+
+        #segunda-div {
+            background-color: rgb(39, 83, 56);
+            color: aliceblue;
+            text-decoration: line-through;
+        }
+
+        .outras-div {
+            color: rgb(20, 20, 20);
+            background-color: rgb(213, 233, 226);
+        }
+
+        .bloco {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 0.5rem;
+            background-color: rgb(124, 199, 204);
+            color: rgb(240, 240, 240);
+            margin: 1rem;
+            padding-left: 1rem;
+        }
+
+        .barra{
+            background-color: rgb(40, 130, 190);
+            color: rgb(255, 255, 255);
+            padding: 1rem;
+            margin: 1rem;
+        }
+
+        .faixa {
+            background-color: rgb(39, 83, 56);
+            color: rgb(255, 255, 255);
+            padding: 1rem;
+            margin: 1rem;
+        }
+
+        #tora {
+            background-color: rgb(39, 83, 56);
+            color: rgb(255, 251, 251);
+            padding: 1rem;
+            margin: 1rem;
+        }
+
+        .madeira {
+            background-color: blueviolet;
+            color: aquamarine;
+            padding: 1rem;
+            margin: 1rem;
+        }
+
+        .container {
+            height: 20rem;
+            border: solid 5px grey;
+            border-radius: .5rem;
+            padding: 1rem;
+            margin: 1rem;
+            box-shadow: .5rem .5rem .3rem .3rem grey;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .item {
+            width: 3rem;
+            height: 3rem;
+            border: .2rem solid rgb(65, 148, 93);
+            border-radius: .6rem;
+            color: rgb(0, 0, 0);
+            margin: 1rem;
+            padding: 1rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--Prioridade: estilo in line no index > estilo em bloco no index > estilo no css em pagina separada-->
+    <!--Id identifica unicamente e não repete. A classe identifica em grupos e é feita para ser repetida-->
+    <!--Todo mundo que tiver a mesma classe terá as mesmas características-->
+
+    <p style="color: rgb(0, 0, 0);">
+        Isso é um parágrafo
+    </p>
+
+    <div id="primeira-div">
+        Esta é a primeira DIV.
+    </div>
+
+    <div id="segunda-div">
+        Esta é a segunda DIV.
+    </div>
+
+    <div class="outras-div">
+        Esta é a terceira DIV.
+    </div>
+
+    <div class="outras-div">
+        Esta é a quarta DIV.
+    </div>
+    
+    <div class="bloco">Isto é um bloco.</div>
+    <div class="bloco">Isto é um bloco.</div>
+    <div class="bloco">Isto é um bloco.</div>
+
+    <div class="faixa barra">
+        Esta é a quinta div
+    </div>
+
+    <div class="barra faixa">
+        Esta é a sexta div
+    </div>
+
+    <div class="banda fita">Esta é a sétima DIV</div>
+    <div class="fita banda">Esta é a oitava DIV</div>
+
+    <div id="tora" class="madeira">
+        Esta é a nona div
+    </div>
+
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+        <div class="item">Item 11</div>
+        <div class="item">Item 12</div>
+        <div class="item">Item 13</div>
+        <div class="item">Item 14</div>
+    </div>
+
+</body>
+
+</html>
