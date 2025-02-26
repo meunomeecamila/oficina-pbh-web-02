@@ -155,6 +155,23 @@
         <div class="item">Item 14</div>
     </div>
 
+    <script>
+        //mensagem que abre uma aba
+        alert("Olá, mundo!");
+        //mensagem escrita na própria pagina
+        document.write("Olá, mundo! Eu sou um document.write");
+        //mensagem para o programador, só aparece quando aperta f12
+        console.log("Olá Mundo, eu sou um console");
+        //trocou a mensagem da primeira div - trocou o texto que estava dentro da div
+        document.getElementById("primeira-div").innerHTML="Olá, mundo! Sou um document.getElementById";
+
+        var nome = prompt("Informe o seu nome:");
+        document.getElementById("primeira-div").innerHTML="O seu nome é: " + nome;
+        alert("O seu nome é: " + nome);
+
+
+    </script>
+
 </body>
 
 </html>
